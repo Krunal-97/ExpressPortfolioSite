@@ -27,3 +27,5 @@
 13. app.js : app.use(express.static(path.join(__dirname, 'node_modules')));
 14. set path for bootstrap/jquery....
 15. cerate partials folder: views/partials
+16. install sass: npm i -g sass 
+17. run sass: sass --watch public/Content/scss/app.scss public/Content/css/app.css
