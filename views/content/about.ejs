@@ -1,29 +1,43 @@
 <%- include ../partials/header.ejs %>
 <%- include ../partials/main_nav.ejs %>
 
-  <!-- Main Content -->
-  <main>
-  <div class="about container">
-    <div class="about-top">
+  <!-- About Content -->
+<div class="project-top-text">
+  <h1>About Me</h1>
+</div>
+
+<div class="about container">
+
+  <!-- About me -->
+
+  <!-- About Profile and text -->
+  <div class="about-top">
       <div class="about-img"> 
         <img src="/Assets/images/profile.jpg">
       </div>
       <div class="about-text">
         <p>
           I have recently completed Bachelor of Engineering in the field of Computer Engineering. 
-  
+        </p>
+        <p>
           In contemporary times, the world is becoming digital, and Artificial Intelligence technologies are the heart of it. 
           And I am keen towards learning trending technologies.
           Hence, at present, I have enrolled myself in the Software Enginnering Technology Artificial Intelligence - Fast Track Program at the Centennial College.
-  
+        </p>
+        <p>
           Moreover, Web designing and development is passion for me. This course will help me to enhance my skills as i will learn some trending web technologies such as Node JS, Express JS, Mongo DB, React.
         </p>
       </div>
+  </div>
+
+  <!-- About Skill Section -->
+  <div class="about-skills">
+
+    <div class="about-skills-head">
+      <h2>Skills</h2>
     </div>
-    <div class="about-skills">
-      <!-- <div class="about-skills-head">
-        <h2>Skills</h2>
-      </div> -->
+
+    <div class="about-skill-section">
       <div class="about-skill-1 about-skill-card">
         <h2>HTML5</h2>
         <img src="/Assets/images/skills/html.png" alt="HTML5">
@@ -61,8 +75,10 @@
     <div class="about-pdf">
       <a href="/Assets/pdf/example.pdf" view>Resume</a>
     </div>
+
   </div>
-</main>
+</div>
+
 
   
 <%- include ../partials/bottom_nav.ejs %>  
