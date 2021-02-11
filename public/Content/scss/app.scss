@@ -1,6 +1,6 @@
 $primary-font: Arial, Helvetica, sans-serif;
 $primary-color: #7d4597;
-$secondary-color: #3366ff;
+$secondary-color: #6676d3;
 $light-color: #ffffff;
 $dark-color: #505050; 
 @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Nanum+Gothic&display=swap');
@@ -62,7 +62,7 @@ a {
   align-items: center;
   justify-content: center;
   padding-top: 20px;
-  border-radius: 0 0 20px 20px;
+  border-radius: 0 0 10px 10px;
 }
 // Navbar
 
@@ -143,8 +143,7 @@ a {
     font-size: 17px;
     &:hover{
         text-decoration: none;
-        background-color: $light-color;
-        color: $primary-color;
+        border-bottom: 1px solid $light-color;
         border-radius: 2px;
         opacity: 0.9;
         transition: 0.3s;
@@ -180,6 +179,7 @@ a {
   
     .home-text { 
       animation: slideInFromLeft 1s ease-in;
+      text-align: center;
       h1 {
         font-size: 42px;
       }
@@ -295,8 +295,8 @@ a {
     grid-template-columns: repeat(4, 1fr);
   
     img {
-      height: 80px;
-      width: 70px;
+      height: 90px;
+      width: 80px;
     }
     .about-skill-card{
       transition: transform 0.2s ease-in-out;

@@ -31,8 +31,8 @@ a {
 
 .project-top-text {
   height: 100px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#7d4597), to(#3366ff));
-  background-image: linear-gradient(180deg, #7d4597, #3366ff);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#7d4597), to(#6676d3));
+  background-image: linear-gradient(180deg, #7d4597, #6676d3);
   font-family: "Cinzel", serif;
   color: #ffffff;
   display: -webkit-box;
@@ -45,7 +45,7 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   padding-top: 20px;
-  border-radius: 0 0 20px 20px;
+  border-radius: 0 0 10px 10px;
 }
 
 .topnav {
@@ -75,8 +75,7 @@ a {
 
 .topnav a:hover {
   text-decoration: none;
-  background-color: #ffffff;
-  color: #7d4597;
+  border-bottom: 1px solid #ffffff;
   border-radius: 2px;
   opacity: 0.9;
   -webkit-transition: 0.3s;
@@ -122,6 +121,7 @@ a {
 .home-container .home .home-text {
   -webkit-animation: slideInFromLeft 1s ease-in;
           animation: slideInFromLeft 1s ease-in;
+  text-align: center;
 }
 
 .home-container .home .home-text h1 {
@@ -156,8 +156,8 @@ a {
 }
 
 .home-container .home .home-text .home-link a {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#7d4597), to(#3366ff));
-  background-image: linear-gradient(180deg, #7d4597, #3366ff);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#7d4597), to(#6676d3));
+  background-image: linear-gradient(180deg, #7d4597, #6676d3);
   padding: 8px 30px;
   border-radius: 3px;
   color: #ffffff;
@@ -205,8 +205,8 @@ a {
 }
 
 .home-container .home .home-text .home-icons i a {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#7d4597), to(#3366ff));
-  background-image: linear-gradient(180deg, #7d4597, #3366ff);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#7d4597), to(#6676d3));
+  background-image: linear-gradient(180deg, #7d4597, #6676d3);
   padding: 8px 30px;
   border-radius: 3px;
   color: #ffffff;
@@ -348,8 +348,8 @@ a {
 }
 
 .about .about-skill-section img {
-  height: 80px;
-  width: 70px;
+  height: 90px;
+  width: 80px;
 }
 
 .about .about-skill-section .about-skill-card {
@@ -403,8 +403,8 @@ a {
 }
 
 .about .about-pdf a {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#7d4597), to(#3366ff));
-  background-image: linear-gradient(180deg, #7d4597, #3366ff);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#7d4597), to(#6676d3));
+  background-image: linear-gradient(180deg, #7d4597, #6676d3);
   padding: 8px 30px;
   border-radius: 3px;
   color: #ffffff;
@@ -488,8 +488,8 @@ a {
 }
 
 .projects .project-button a {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#7d4597), to(#3366ff));
-  background-image: linear-gradient(180deg, #7d4597, #3366ff);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#7d4597), to(#6676d3));
+  background-image: linear-gradient(180deg, #7d4597, #6676d3);
   padding: 8px 30px;
   border-radius: 3px;
   color: #ffffff;
@@ -590,8 +590,8 @@ a {
 }
 
 .services-section .service-link a {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#7d4597), to(#3366ff));
-  background-image: linear-gradient(180deg, #7d4597, #3366ff);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#7d4597), to(#6676d3));
+  background-image: linear-gradient(180deg, #7d4597, #6676d3);
   padding: 8px 30px;
   border-radius: 3px;
   color: #ffffff;
@@ -613,8 +613,8 @@ a {
 
 .footer-main .footer-top {
   padding: 40px 0;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#7d4597), to(#3366ff));
-  background-image: linear-gradient(360deg, #7d4597, #3366ff);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#7d4597), to(#6676d3));
+  background-image: linear-gradient(360deg, #7d4597, #6676d3);
   color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -836,8 +836,8 @@ a {
     text-align: center;
   }
   .home-container .home .home-text .home-link a {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#7d4597), to(#3366ff));
-    background-image: linear-gradient(180deg, #7d4597, #3366ff);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#7d4597), to(#6676d3));
+    background-image: linear-gradient(180deg, #7d4597, #6676d3);
     padding: 8px 30px;
     border-radius: 3px;
     color: #ffffff;
@@ -1048,8 +1048,8 @@ a {
     text-align: center;
   }
   .services-section .service-link a {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#7d4597), to(#3366ff));
-    background-image: linear-gradient(180deg, #7d4597, #3366ff);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#7d4597), to(#6676d3));
+    background-image: linear-gradient(180deg, #7d4597, #6676d3);
     padding: 8px 30px;
     border-radius: 3px;
     color: #ffffff;
