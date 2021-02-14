@@ -31,4 +31,9 @@ router.get('/services', function(req, res, next) {
 router.get('/contact', function(req, res, next) {
   res.render('content/contact', { title: 'Contact Me'});
 });
+
+// router.post('/contact', function(req, res, next) {
+//   console.log("aa")
+// });
+
 module.exports = router;
