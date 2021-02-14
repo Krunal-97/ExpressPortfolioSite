@@ -1,7 +1,6 @@
 var express = require('express');
 var router = express.Router();
 
-
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Home'});
@@ -32,8 +31,8 @@ router.get('/contact', function(req, res, next) {
   res.render('content/contact', { title: 'Contact Me'});
 });
 
-// router.post('/contact', function(req, res, next) {
-//   console.log("aa")
-// });
+router.post('/contact', function(req, res, next) {
+  console.log("Message");
+});
 
 module.exports = router;
