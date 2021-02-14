@@ -921,6 +921,7 @@ a {
   .home-container .home .home-text {
     -webkit-animation: slideInFromTop 1s ease-in;
             animation: slideInFromTop 1s ease-in;
+    text-align: center;
   }
   .home-container .home .home-text h1 {
     font-size: 36px;
