@@ -396,6 +396,9 @@ a {
   .contact-form {
     @include link-design();
     margin: 50px 0;
+    a {
+      all:none;
+    }
     input, textarea {
       padding: 3px 3px 3px 5px;
     }
