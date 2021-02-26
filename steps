@@ -1,0 +1,5 @@
+npm install connect-flash --save
+npm install express-session --save
+npm install passport passport-local passport-local-mongoose --save
+npm install @typs/express @typs/express-session
+npm install @types/express @types/express-session @types/mongoose @types/passport @types/passport-local @types/passport-local-mongoose --save-dev
