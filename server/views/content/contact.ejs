@@ -1,0 +1,59 @@
+<!-- File name: contact.ejs
+Name: Krunal Parmar
+Student Id: 301146813
+Date: 06/02/2021
+ExpressPortfolio
+Copyright © 2021 Centennial College. All rights reserved. -->
+
+<%- include ../partials/header.ejs %>
+<%- include ../partials/main_nav.ejs %>
+
+<!-- Contact Me Header -->
+<div class="project-top-text">
+    <h1>Contact Me</h1>
+</div>
+
+<!-- Contact Me Content -->
+<div class="contact-me container">
+
+    <div class="contact-form">
+        <form action="/contact" method="POST">
+            <input type="text" id="fname" name="fname" placeholder="First Name" required><br><br>
+            <input type="text" id="lname" name="lname" placeholder="Last Name" required><br><br>
+            <input type="email" id="email" name="email" placeholder="Enter Email" required><br><br>
+            <textarea name="message" rows="4" placeholder="Enter message" required></textarea><br><br>
+            <a class="contact-link" href="/">"Let's Build!"</a>
+        </form> 
+    </div>
+
+    <div class="contact-page-info">
+        <div>
+          <p>Krunal Parmar</p>
+          <p>krunalparmar418@gmail.com</p>
+          <p>Ahmedabad, India.</p>
+        </div>
+        <div>
+          <ul>
+            <li>
+              <a href="https://www.linkedin.com/in/krunal-97"><i class="fab fa-linkedin"></i></a>
+            </li>
+            <li>
+              <a href="https://github.com/Krunal-97"><i class="fab fa-github-square"></i></a>
+            </li>
+            <li>
+              <a href="https://codepen.io/krunal-97/"><i class="fab fa-codepen"></i></a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/418KrUnAl"><i class="fab fa-facebook-square"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+    </div>
+
+</div>
+
+<%- include ../partials/bottom_nav.ejs %>  
+<%- include ../partials/footer.ejs %>
