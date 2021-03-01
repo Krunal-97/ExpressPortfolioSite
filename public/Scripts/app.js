@@ -1,3 +1,9 @@
+// File name: app.ejs
+// Name: Krunal Parmar
+// Student Id: 301146813
+// Date: 06/02/2021
+// ExpressPortfolio
+// Copyright © 2021 Centennial College. All rights reserved.
 // IIFE -- Immediately Invoked Function Expression
 (function(){
 

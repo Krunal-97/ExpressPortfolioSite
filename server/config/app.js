@@ -1,18 +1,20 @@
+// File name: db.ejs
+// Name: Krunal Parmar
+// Student Id: 301146813
+// Date: 06/02/2021
+// ExpressPortfolio
+// Copyright © 2021 Centennial College. All rights reserved.
+
 // install 3rd party packages
 let createError = require('http-errors');
 let express = require('express');
 let path = require('path');
 let cookieParser = require('cookie-parser');
 let logger = require('morgan');
-// let cors = require('cors');
 
 // modules for authentication
 let session = require('express-session');
 let passport = require('passport');
-
-// let passportJWT = require('passport-jwt');
-// let JWTStrategy = passportJWT.Strategy;
-// let ExtractJWT = passportJWT.ExtractJwt;
 
 let passportLocal = require('passport-local');
 let localStrategy = passportLocal.Strategy;
@@ -60,8 +62,6 @@ app.use(flash());
 app.use(passport.initialize());
 app.use(passport.session());
 
-// passport user configuration
-
 // create a User Model Instance
 let userModel = require('../models/user');
 let User = userModel.User;
@@ -72,20 +72,6 @@ passport.use(User.createStrategy());
 // serialize and deserialize the User info
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
-
-// let jwtOptions = {};
-// jwtOptions.jwtFromRequest = ExtractJWT.fromAuthHeaderAsBearerToken();
-// jwtOptions.secretOrKey = DB.Secret;
-
-// let strategy = new JWTStrategy(jwtOptions, (jwt_payload, done) => {
-//   User.findById(jwt_payload.id)
-//     .then(user => {
-//       return done(null, user);
-//     })
-//     .catch(err => {
-//       return done(err, false);
-//     });
-// });
 
 // passport.use(strategy);
 

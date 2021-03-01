@@ -1,3 +1,10 @@
+// File name: index.ejs
+// Name: Krunal Parmar
+// Student Id: 301146813
+// Date: 23/02/2021
+// ExpressPortfolio
+// Copyright © 2021 Centennial College. All rights reserved.
+
 let express = require('express');
 let router = express.Router();
 let mongoose = require('mongoose');
@@ -10,7 +17,6 @@ let passport = require('passport');
 // create the User Model instance
 let userModel = require('../models/user');
 let User = userModel.User; // alias
-
 
 module.exports.displayHomePage = (req, res, next) => {
     res.render('index', { title: 'Home', displayName: req.user ? req.user.displayName : ''});
@@ -36,12 +42,12 @@ module.exports.displayLoginPage = (req, res, next) => {
     // check if the user is already logged in
     if(!req.user)
     {
-        res.render('auth/login', 
-        {
-           title: "Login",
-           messages: req.flash('loginMessage'),
-           displayName: req.user ? req.user.displayName : '' 
-        })
+    res.render('auth/login', 
+    {
+        title: "Login",
+        messages: req.flash('loginMessage'),
+        displayName: req.user ? req.user.displayName : '' 
+    })
     }
     else
     {
@@ -144,14 +150,6 @@ module.exports.processRegisterPage = (req, res, next) => {
         }
         else
         {
-            // if no error exists, then registration is successful
-
-            // redirect the user and authenticate them
-
-            /* TODO - Getting Ready to convert to API
-            res.json({success: true, msg: 'User Registered Successfully!'});
-            */
-
             return passport.authenticate('local')(req, res, () => {
                 res.redirect('/business-list')
             });

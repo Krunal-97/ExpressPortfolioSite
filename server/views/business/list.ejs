@@ -1,20 +1,30 @@
+<!-- 
+// File name: list.ejs
+// Name: Krunal Parmar
+// Student Id: 301146813
+// Date: 23/02/2021
+// ExpressPortfolio
+// Copyright © 2021 Centennial College. All rights reserved. -->
+
+<% if(typeof displayName == 'string' && displayName) { %>
 <%- include ../partials/header.ejs %>
 <%- include ../partials/main_nav.ejs %>
 
 <!-- Main Content -->
-  <main class="container">
-    <div class="row">
+<main class="container">
+    <div class="row business-list">
         <div class="offset-md-1 col-md-11">
             <h1><%= title %></h1>
-            <a href="/business-list/add" class="btn btn-primary" role="button">
+            <!-- <a href="/business-list/add" class="btn btn-primary" role="button">
             <i class="fas fa-plus-circle"></i> Add a Business</a>
-            <br>
+            <br> -->
             <table class="table table-bordered table-striped table-hover">
                 <!-- Header Row-->
                 <tr class="d-flex">
                     <th class="text-center col-3">Name</th>
                     <th class="text-center col-3">Number</th>
-                    <th class="text-center col-4">Email</th>
+                    <th class="text-center col-3">Email</th>
+                    <th class="text-center col-3">Operations</th>
                 </tr>
 
                 <!-- Repeatable Template Row -->
@@ -23,13 +33,13 @@
                     <tr class="d-flex">
                         <td class="text-center col-3"><%= BusinessList[count].name %></td>
                         <td class="text-center col-3"><%= BusinessList[count].number %></td>
-                        <td class="text-center col-4"><%= BusinessList[count].email %></td>
-                        <td class="text-center col-1">
-                            <a href="/business-list/edit/<%= BusinessList[count]._id %>" class="btn btn-primary btn-sm">
+                        <td class="text-center col-3"><%= BusinessList[count].email %></td>
+                        <td class="text-center col-1.5">
+                            <a href="/business-list/edit/<%= BusinessList[count]._id %>" class="btn btn-primary btn-sm edit-btn">
                             <i class="fas fa-pencil-alt"></i> Edit</a>
                         </td>
-                        <td class="text-center col-1">
-                            <a href="/business-list/delete/<%= BusinessList[count]._id %>" class="btn btn-danger btn-sm">
+                        <td class="text-center col-1.5">
+                            <a href="/business-list/delete/<%= BusinessList[count]._id %>" class="btn btn-danger btn-sm del-btn">
                             <i class="fas fa-trash-alt"></i> Delete</a>
                         </td>
                     </tr>
@@ -42,8 +52,6 @@
 <%- include ../partials/bottom_nav.ejs %>  
 <%- include ../partials/footer.ejs %>
 
-
-
-
-
-
+<% } else { %>
+    <script> document.location.href = '/login' </script>
+<% } %>

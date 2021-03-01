@@ -21,16 +21,15 @@ Copyright © 2021 Centennial College. All rights reserved. -->
     <% } %>
 
     <% if(typeof displayName == 'string' && displayName) { %>
-      <li class="navbar-text"><i class="fas fa-lg fa-user"></i> Welcome, <%= displayName %></li>
-      <li class="nav-item"><a href="/logout" class="nav-link">
-      <i class="fas fa-lg fa-sign-out-alt"></i> Logout</a></li>
+      
+      <a class="nav-item" href="/logout"> Welcome, <%= displayName %> <i class="fas fa-lg fa-sign-out-alt"></i> Logout</a>
+
     <% } else { %>
-      <li class="nav-item"><a href="/login" class="nav-link">
-      <i class="fas fa-lg fa-sign-in-alt"></i> Login</a></li>
+    <a class="nav-item" href="/login"><i class="fas fa-lg fa-sign-in-alt"></i> Login</a>
+
     <% } %>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
     </a>
-  </div>
-  
+  </div>  
 </nav>

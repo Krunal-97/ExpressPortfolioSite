@@ -1,9 +1,17 @@
+<!-- 
+// File name: edit.ejs
+// Name: Krunal Parmar
+// Student Id: 301146813
+// Date: 23/02/2021
+// ExpressPortfolio
+// Copyright © 2021 Centennial College. All rights reserved. -->
+
 <%- include ../partials/header.ejs %>
 <%- include ../partials/main_nav.ejs %>
 
 <!-- Content for the Add page -->
 <div class="container">
-    <div class="row">
+    <div class="row edit">
         <div class="offset-md-3 col-md-6">
             <h1><%= title %></h1>
 
@@ -38,25 +46,14 @@
                     required>
                 </div>
 
-                <
-
-                <button class="btn btn-primary" type="submit">
-                    <i class="fas fa-edit"></i> Submit</button>
-                
-                    <a href="/business-list" class="btn btn-warning">
+                <button class="btn btn-primary edit-btn" type="submit">
+                    <i class="fas fa-edit"></i> Submit</button>                
+                    <a href="/business-list" class="btn btn-warning edit-btn">
                         <i class="fas fa-undo"></i> Cancel</a>
-
             </form>
         </div>
-
     </div>
 </div>
 
 <%- include ../partials/bottom_nav.ejs %>  
 <%- include ../partials/footer.ejs %>
-
-
-
-
-
-

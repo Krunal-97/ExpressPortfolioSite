@@ -1,8 +1,13 @@
+// File name: business.ejs
+// Name: Krunal Parmar
+// Student Id: 301146813
+// Date: 23/02/2021
+// ExpressPortfolio
+// Copyright © 2021 Centennial College. All rights reserved.
+
 let express = require('express');
 let router = express.Router();
 let mongoose = require('mongoose');
-
-// let jwt = require('jsonwebtoken');
 
 // create a reference to the model
 let Business = require('../models/business');
@@ -18,11 +23,11 @@ module.exports.displayBusinessList = (req, res, next) => {
             // console.log(BusinessList);
 
             res.render('business/list', 
-            {title: 'Businesses', 
+            {title: 'Business Contacts', 
             BusinessList: businessList, 
             displayName: req.user ? req.user.displayName : ''});      
         }
-    });
+    }).sort({"name":1});
 }
 
 module.exports.displayAddPage = (req, res, next) => {
