@@ -656,6 +656,10 @@ a {
   font-weight: bold;
 }
 
+.contact-me .contact-form a {
+  all: none;
+}
+
 .contact-me .contact-form input, .contact-me .contact-form textarea {
   padding: 3px 3px 3px 5px;
 }
@@ -882,6 +886,36 @@ a {
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
+}
+
+.login {
+  margin: 30px;
+}
+
+.login .login-btn {
+  background-color: #7d4597;
+  color: #ffffff;
+  border: none;
+}
+
+.edit {
+  margin: 50px 20px;
+}
+
+.edit .edit-btn {
+  background-color: #7d4597;
+  color: #ffffff;
+  border: none;
+}
+
+.business-list {
+  margin: 50px 10px;
+}
+
+.business-list .edit-btn {
+  background-color: #7d4597;
+  color: #ffffff;
+  border: none;
 }
 
 @media screen and (max-width: 600px) {

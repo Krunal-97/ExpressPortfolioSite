@@ -532,6 +532,35 @@ a {
   }
 }
 
+// login page 
+.login{
+  margin:30px;
+  .login-btn {
+    background-color: $primary-color;
+    color: $light-color;
+    border: none;
+  }
+}
+
+// edit page
+.edit {
+  margin: 50px 20px;
+  .edit-btn{
+    background-color: $primary-color;
+    color: $light-color;
+    border: none;
+  }
+}
+// business-list
+.business-list {
+  margin: 50px 10px;
+  .edit-btn{
+    background-color: $primary-color;
+    color: $light-color;
+    border: none;
+  }
+}
+
 // Responsive layout: Style for screen size of 600px or lesser than 600px.
 @media screen and (max-width: 600px) {
 
