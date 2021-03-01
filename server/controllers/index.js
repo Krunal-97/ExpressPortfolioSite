@@ -90,7 +90,8 @@ module.exports.processLoginPage = (req, res, next) => {
                 email: user.email
             }, token: authToken});
             */
-
+            console.log("jiiiii");
+            console.log(user);
             return res.redirect('/business-list');
         });
     })(req, res, next);
