@@ -85,10 +85,10 @@ a {
 .topnav i {
   padding: 2px;
   margin: 0 2px;
-  -webkit-transition: -webkit-transform .2s;
-  transition: -webkit-transform .2s;
-  transition: transform .2s;
-  transition: transform .2s, -webkit-transform .2s;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
 }
 
 .topnav i:hover {
@@ -153,10 +153,10 @@ a {
   margin: 0px;
   font-size: 18px;
   text-align: center;
-  -webkit-transition: -webkit-transform .2s;
-  transition: -webkit-transform .2s;
-  transition: transform .2s;
-  transition: transform .2s, -webkit-transform .2s;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
 }
 
 .home-container .home .home-text .home-link a {
@@ -200,10 +200,10 @@ a {
 .home-container .home .home-text .home-icons i {
   padding-right: 24px;
   margin-top: 28px;
-  -webkit-transition: -webkit-transform .2s;
-  transition: -webkit-transform .2s;
-  transition: transform .2s;
-  transition: transform .2s, -webkit-transform .2s;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
   font-size: 24px;
   color: #7d4597;
 }
@@ -473,8 +473,8 @@ a {
 .projects a img:hover {
   opacity: 0.9;
   border-color: #7d4597;
-  -webkit-transition: all .5s ease-out;
-  transition: all .5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
 }
 
 .projects a {
@@ -660,7 +660,8 @@ a {
   all: none;
 }
 
-.contact-me .contact-form input, .contact-me .contact-form textarea {
+.contact-me .contact-form input,
+.contact-me .contact-form textarea {
   padding: 3px 3px 3px 5px;
 }
 
@@ -707,10 +708,10 @@ a {
 
 .contact-me .contact-page-info ul li i {
   margin: 0 10px;
-  -webkit-transition: -webkit-transform .2s;
-  transition: -webkit-transform .2s;
-  transition: transform .2s;
-  transition: transform .2s, -webkit-transform .2s;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
   font-size: 24px;
   color: #7d4597;
 }
@@ -758,10 +759,10 @@ a {
 
 .footer-main .footer-top .footer-contact ul i {
   margin: 0 20px 0 0;
-  -webkit-transition: -webkit-transform .2s;
-  transition: -webkit-transform .2s;
-  transition: transform .2s;
-  transition: transform .2s, -webkit-transform .2s;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
   font-size: 22px;
   text-align: center;
 }
@@ -1246,7 +1247,8 @@ a {
     font-size: 20px;
     font-weight: bold;
   }
-  .contact-me .contact-form input, .contact-me .contact-form textarea {
+  .contact-me .contact-form input,
+  .contact-me .contact-form textarea {
     padding: 3px;
   }
   .contact-me .contact-page-info {
@@ -1279,10 +1281,10 @@ a {
   }
   .footer-main .footer-top .footer-contact ul i {
     margin: 30px 10px 30px 10px;
-    -webkit-transition: -webkit-transform .2s;
-    transition: -webkit-transform .2s;
-    transition: transform .2s;
-    transition: transform .2s, -webkit-transform .2s;
+    -webkit-transition: -webkit-transform 0.2s;
+    transition: -webkit-transform 0.2s;
+    transition: transform 0.2s;
+    transition: transform 0.2s, -webkit-transform 0.2s;
     font-size: 20px;
   }
   .footer-main .footer-top .footer-contact .contact-info {
